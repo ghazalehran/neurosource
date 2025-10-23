@@ -1,3 +1,6 @@
+![NeuroSource Banner](docs/banner-neurosource.png)
+
+
 <p align="left">
   <img src="https://img.shields.io/badge/status-active-brightgreen.svg" alt="status">
   <img src="https://img.shields.io/badge/contributions-welcome-blueviolet.svg" alt="contributions welcome">
