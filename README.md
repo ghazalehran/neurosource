@@ -1,4 +1,6 @@
-![NeuroSource Banner](docs/banner-neurosource.png)
+<p align="left">
+  <img src="docs/banner-neurosource.png" alt="NeuroSource Banner" width="450">
+</p>
 
 
 <p align="left">
@@ -142,3 +144,4 @@ If you use or reference **NeuroSource** in your work:
   howpublished = {\url{https://github.com/ghazalehran/neurosource}}
 }
 ```
+
