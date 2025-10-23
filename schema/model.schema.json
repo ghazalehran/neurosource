@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Neural Model Schema",
+  "type": "object",
+  "required": ["model_name", "modality", "architecture", "year", "paper_url"],
+  "properties": {
+    "model_name": {
+      "type": "string",
+      "description": "Full name of the model."
+    },
+    "modality": {
+      "type": "string",
+      "enum": ["EEG", "fMRI", "ECoG", "spikes", "calcium", "other"]
+    },
+    "architecture": {
+      "type": "string",
+      "description": "Core neural architecture (CNN, Transformer, etc.)."
+    },
+    "task": {
+      "type": "string",
+      "description": "Main task (classification, reconstruction, decoding, etc.)."
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1980,
+      "maximum": 2100
+    },
+    "paper_doi": {
+      "type": "string",
+      "description": "DOI of the paper (optional)."
+    },
+    "paper_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "code_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dataset_tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "open_weights": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
