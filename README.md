@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/banner-neurosource.png" alt="NeuroSource Banner" width="400">
-</p>
-
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-brightgreen.svg" alt="status">
@@ -144,6 +140,7 @@ If you use or reference **NeuroSource** in your work:
   howpublished = {\url{https://github.com/ghazalehran/neurosource}}
 }
 ```
+
 
 
 
