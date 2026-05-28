@@ -1,41 +1,75 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This site is a [Docusaurus](https://docusaurus.io/) app. Catalog pages read JSON from `src/data/` (generated from YAML in the repo root).
 
-## Installation
+Use **npm** with the committed `package-lock.json` (do not use Yarn here — it would create a second lockfile).
 
-```bash
-yarn
-```
+## Prerequisites
 
-## Local Development
+| Tool | Version |
+|------|---------|
+| **Node.js** | **22.x** |
+| **npm** | Bundled with Node (npm 10.x ships with Node 22; required for `lockfileVersion` 3) |
 
-```bash
-yarn start
-```
+### Install Node.js 22 (pick one method)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+**Option A — [nvm](https://github.com/nvm-sh/nvm) (Linux / macOS / WSL)**
 
 ```bash
-yarn build
+# Install nvm if needed, then from the website/ directory:
+nvm install
+nvm use
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+(`website/.nvmrc` pins Node 22.) Or explicitly: `nvm install 22 && nvm use 22`.
 
-## Deployment
+**Option B — installer**
 
-Using SSH:
+Download the **22.x** installer from [nodejs.org](https://nodejs.org/).
+
+### Verify
 
 ```bash
-USE_SSH=true yarn deploy
+node -v   # expect v22.x.x
+npm -v    # expect 10.x (bundled with Node 22)
 ```
 
-Not using SSH:
+## Build the website locally
+
+From the **repository root**:
+
+### 1. Install dependencies
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+cd website
+npm ci
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+### 2. (Optional) Regenerate catalog JSON
+
+Skip this if the catalog entries are already included in JSON files under `website/src/data/`. Run it when you changed YAML under `models/`, `datasets/`, or `repositories/` and want fresh JSON:
+
+```bash
+pip install pyyaml
+python scripts/build_catalog.py
+```
+
+### 3. Development server (live reload)
+
+```bash
+cd website
+npm run start
+```
+
+Open the URL printed in the terminal (usually [http://localhost:3000](http://localhost:3000)). Stop with `Ctrl+C`.
+
+
+## Scripts
+
+| Command | Purpose |
+|---------|---------|
+| `npm run start` | Dev server with hot reload |
+| `npm run build` | Optimized static build → `build/` |
+| `npm run serve` | Serve `build/` after `npm run build` |
+| `npm run clear` | Clear Docusaurus cache if the dev server acts stale |
+
