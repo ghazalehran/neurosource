@@ -44,6 +44,8 @@ def load_entries(category):
     """Load entries from either a directory of files or a single list file."""
     entries = []
     if category["multi_file"]:
+        if not os.path.isdir(category["data_path"]):
+            return entries
         for root, _, files in os.walk(category["data_path"]):
             for f in sorted(files):
                 if f.endswith(".yaml"):
@@ -54,6 +56,9 @@ def load_entries(category):
                     elif isinstance(data, list):
                         entries.extend(data)
     else:
+        if not os.path.isfile(category["data_path"]):
+            print(f"  No source file at {category['data_path']}, writing empty list")
+            return entries
         data = load_yaml(category["data_path"])
         if isinstance(data, list):
             entries.extend(data)
