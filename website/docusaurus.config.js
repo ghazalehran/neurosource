@@ -50,7 +50,7 @@ const config = {
         logo: {
           alt: 'IVADO logo',
           src: 'img/ivado_logo.png',
-          href: '/',
+          href: '/neurosource/',
         },
         items: [
           {to: '/models', label: 'Models', position: 'left'},
