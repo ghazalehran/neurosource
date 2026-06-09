@@ -45,14 +45,16 @@ cd website
 npm ci
 ```
 
-### 2. (Optional) Regenerate catalog JSON
+### 2. Generate catalog JSON
 
-Skip this if the catalog entries are already included in JSON files under `website/src/data/`. Run it when you changed YAML under `models/`, `datasets/`, or `repositories/` and want fresh JSON:
+The catalog JSON under `website/src/data/` is a **build artifact and is not committed** (it is gitignored). Generate it from the YAML catalog before starting the dev server, and re-run it whenever you change YAML under `models/`, `datasets/`, or `repositories/`:
 
 ```bash
 pip install pyyaml
-python scripts/build_catalog.py
+python website/scripts/build_catalog.py
 ```
+
+The deploy workflow runs this same step in CI, so production builds never depend on locally generated files.
 
 ### 3. Development server (live reload)
 
