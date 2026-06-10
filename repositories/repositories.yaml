@@ -401,3 +401,31 @@
   - fmap
   - phenotype
   access_type: open
+
+- repository_name: Cogitate Project Registry
+  url: https://www.arc-cogitate.com/
+  description: 
+  modalities:
+  - EEG
+  - MEG
+  - fMRI
+  - iEEG
+  access_type: open
+
+- repository_name: IEEG.org
+  url: https://www.ieeg.org/
+  description: Collaborative platform for sharing intracranial EEG (IEEG) datasets.
+  modalities:
+  - IEEG
+  - ECog
+  - sEEG
+  access_type: registration_required
+
+- repository_name: CRCNS (Collaborative Research in Computational Neuroscience)
+  url: https://crcns.org/
+  description: Collaborative platform for sharing intracranial EEG (IEEG) datasets.
+  modalities:
+  - IEEG
+  - ECog
+  - sEEG
+  access_type: registration_required
