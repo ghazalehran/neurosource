@@ -1,8 +1,11 @@
 # Website
 
-This site is a [Docusaurus](https://docusaurus.io/) app. Catalog pages read JSON from `src/data/` (generated from YAML in the repo root).
+This site is a [Docusaurus](https://docusaurus.io/) app that renders the NeuroSource catalogue as browsable, filterable tables.
 
-Use **npm** with the committed `package-lock.json` (do not use Yarn here — it would create a second lockfile).
+**Live site:** [https://ivado-neuroai.github.io/neurosource/](https://ivado-neuroai.github.io/neurosource/)
+
+
+---
 
 ## Prerequisites
 
@@ -33,6 +36,8 @@ Download the **22.x** installer from [nodejs.org](https://nodejs.org/).
 node -v   # expect v22.x.x
 npm -v    # expect 10.x (bundled with Node 22)
 ```
+
+---
 
 ## Build the website locally
 
@@ -65,6 +70,7 @@ npm run start
 
 Open the URL printed in the terminal (usually [http://localhost:3000](http://localhost:3000)). Stop with `Ctrl+C`.
 
+---
 
 ## Scripts
 
@@ -75,3 +81,10 @@ Open the URL printed in the terminal (usually [http://localhost:3000](http://loc
 | `npm run serve` | Serve `build/` after `npm run build` |
 | `npm run clear` | Clear Docusaurus cache if the dev server acts stale |
 
+---
+
+## Contributing catalog changes
+
+When you add or edit YAML entries under `models/`, `datasets/`, or `repositories/`, regenerate the catalog JSON and preview locally before opening a pull request. After your PR merges to `main`, the deploy workflow rebuilds and publishes the site automatically.
+
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for entry conventions and validation.
