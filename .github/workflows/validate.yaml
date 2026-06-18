@@ -5,7 +5,8 @@ on:
     paths:
       - 'models/**/*.yaml'
       - 'datasets/**/*.yaml'
-      - 'schema/**/*.json'
+      - 'repositories/**/*.yaml'
+      - 'schema/**'
       - '.github/scripts/validate_catalog.py'
 
 jobs:
