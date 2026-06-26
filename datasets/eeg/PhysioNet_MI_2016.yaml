@@ -1,0 +1,19 @@
+dataset_name: EEG Motor Movement/Imagery Dataset
+dataset_id: PhysioNet_MI_2009
+modalities: [EEG]
+species: human
+recording_task: [resting_state, motor_imagery, motor_execution]
+access_type: registration_required
+url: https://www.physionet.org/content/eegmmidb/1.0.0/
+num_subjects: 109
+num_sessions: 109
+year: 2009
+repository: PhysioNet
+license: ODC-BY
+paper_url: https://doi.org/10.13026/C28G6P
+paper_doi: 10.13026/C28G6P
+bids_compliant: false
+tags: [motor movement, motor imagery]
+notes: >-
+  EEG dataset for motor movement and imagery, involves first or foot movements
+  or imagining inresponse to visual targets.
