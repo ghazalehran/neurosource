@@ -1,0 +1,16 @@
+- dataset_name: Perich Population mechanism for rapid learning
+  dataset_id: Perich_2018
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [motor_execution]
+  access_type: open
+  url: https://dandiarchive.org/dandiset/000688/0.250122.1735
+  num_subjects: 4
+  num_sessions: 111
+  year: 2018
+  repository: DANDI
+  license: CC-BY-4.0
+  paper_url: https://doi.org/10.1016/j.neuron.2018.09.030
+  paper_doi: 10.48324/dandi.000688/0.250122.1735
+  data_format: NWB
+  tags: [reaching, motor control, center-out, random target, M1, PMd]

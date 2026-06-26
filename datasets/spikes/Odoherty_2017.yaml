@@ -1,0 +1,15 @@
+- dataset_name: O'Doherty Nonhuman Primate Reaching
+  dataset_id: Odoherty_2017 
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [motor_execution]
+  access_type: open
+  url: https://zenodo.org/records/583331
+  num_subjects: 2
+  num_sessions: 47
+  year: 2017
+  repository: Zenodo
+  license: CC-BY-4.0
+  paper_url: https://doi.org/10.1088/1741-2552/aa9e95
+  paper_doi: 10.1088/1741-2552/aa9e95
+  tags: [reaching, motor control, random target, M1, S1]

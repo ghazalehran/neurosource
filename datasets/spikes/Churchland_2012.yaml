@@ -1,0 +1,16 @@
+- dataset_name: Churchland Neural Data
+  dataset_id: Churchland_2012
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [motor_execution]
+  access_type: open
+  url: https://doi.org/10.48324/dandi.000070/0.260528.0919
+  num_subjects: 2
+  num_sessions: 10
+  year: 2012
+  repository: DANDI
+  license: CC-BY-4.0
+  paper_url: https://doi.org/10.1038/nature11129
+  paper_doi: doi.org/10.1038/nature11129
+  data_format: NWB
+  tags: [reaching, motor control, center-out, M1]
