@@ -1,6 +1,6 @@
 - dataset_name: Cogitate Conscious visual perception dataset - iEEG
   dataset_id: Cogitate_2024_ieeg
-  modalities: [iEEG]
+  modalities: [iEEG, fMRI]
   species: human
   recording_task: [visual, cognitive]
   access_type: open
@@ -14,7 +14,7 @@
 
 - dataset_name: Cogitate Conscious visual perception dataset - M/EEG
   dataset_id: Cogitate_2024_meeg
-  modalities: [EEG, MEG]
+  modalities: [EEG, MEG, fMRI]
   species: human
   recording_task: [visual, cognitive]
   access_type: open
@@ -28,7 +28,7 @@
 
 - dataset_name: Cogitate Conscious visual perception dataset - fMRI
   dataset_id: Cogitate_2024_fmri
-  modalities: [fMRI]
+  modalities: [fMRI, EEG, MEG]
   species: human
   recording_task: [visual, cognitive]
   access_type: open

@@ -12,5 +12,4 @@
   license: CC-BY-4.0
   paper_url: https://doi.org/10.1016/j.neuron.2018.09.030
   paper_doi: 10.48324/dandi.000688/0.250122.1735
-  data_format: NWB
   tags: [reaching, motor control, center-out, random target, M1, PMd]

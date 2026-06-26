@@ -404,7 +404,7 @@
 
 - repository_name: Cogitate Project Registry
   url: https://www.arc-cogitate.com/
-  description: 
+  description: Cogitate Consortium data platform
   modalities:
   - EEG
   - MEG
@@ -416,8 +416,8 @@
   url: https://www.ieeg.org/
   description: Collaborative platform for sharing intracranial EEG (IEEG) datasets.
   modalities:
-  - IEEG
-  - ECog
+  - iEEG
+  - ECoG
   - sEEG
   access_type: registration_required
 
@@ -425,7 +425,7 @@
   url: https://crcns.org/
   description: Collaborative platform for sharing intracranial EEG (IEEG) datasets.
   modalities:
-  - IEEG
-  - ECog
+  - iEEG
+  - ECoG
   - sEEG
   access_type: registration_required
