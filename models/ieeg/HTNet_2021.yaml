@@ -7,4 +7,5 @@ paper_doi: 10.1088/1741-2552/abda0b
 paper_url: https://pubmed.ncbi.nlm.nih.gov/33418552/
 code_url: https://github.com/BruntonUWBio/HTNet_generalized_decoding
 open_weights: true
+dataset_tags: [HTNet_arm_movement_ECoG_2020]
 notes: "Generalized neural decoder for cross-participant and cross-modality transfer, designed to handle heterogeneous ECoG electrode placements."

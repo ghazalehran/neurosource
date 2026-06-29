@@ -1,0 +1,14 @@
+dataset_name: UK Biobank Brain Imaging Dataset
+dataset_id: UKBiobank_brain_imaging_2016
+modalities: [fMRI, functional, anatomical]
+species: human
+recording_task: [resting_state, emotion]
+access_type: controlled
+url: https://www.ukbiobank.ac.uk/
+paper_url: https://doi.org/10.1038/nn.4393
+num_subjects: 100000
+num_sessions: 76296
+repository: UK Biobank
+year: 2025
+license: custom
+tags: [emotion recognition, resting state, fMRI, functional, anatomical]

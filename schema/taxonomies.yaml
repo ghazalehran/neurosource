@@ -19,6 +19,7 @@ modalities:
   - calcium
   - genomics
   - fMRI
+  - dMRI
   - MRI_T1
   - MRI_T2
   - EOG
@@ -76,7 +77,10 @@ recording_tasks:
   - mental_imagery
   - mental_arithmetic
   - naturalistic_viewing
+  - emotion
   - cognitive
+  - language
+  - memory
   - imagery
   - visual
   - auditory
