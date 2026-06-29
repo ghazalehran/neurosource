@@ -1,0 +1,11 @@
+dataset_name: Visceral pain-related LFP in mice
+dataset_id: Kayama_visceral_pain_2024
+modalities: [LFP]
+species: mouse
+access_type: controlled
+url: https://doi.org/10.1038/s41598-024-75616-6
+year: 2024
+tags: [visceral pain,  multi-region LFP, rodent_model]
+notes: >
+  LFP recorded from eight pain-related regions (S1, ACC, PL, PAG, IL, THL,
+  NAc, AMY) in freely moving mice.
