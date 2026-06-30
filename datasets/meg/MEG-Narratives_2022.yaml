@@ -1,0 +1,19 @@
+- dataset_name: MEG-Narratives
+  dataset_id: MEG-Narratives_2022
+  modalities: [MEG]
+  species: human
+  recording_task: [resting_state, cognitive, auditory, active]
+  access_type: open
+  url: https://data.ru.nl/collections/di/dccn/DSC_3011085.05_995
+  num_subjects: 3
+  num_sessions: 30
+  year: 2022
+  repository: Radboud Universiteit
+  license: custom
+  paper_url: https://doi.org/10.1038/s41597-022-01382-7
+  paper_doi: 10.1038/s41597-022-01382-7
+  tags: [word, sentence, language, naturalistic language comprehension]
+  bids_compliant: true
+  notes: ->
+    A 10-hour within-participant magnetoencephalography narrative 
+    dataset to test models of language comprehension.

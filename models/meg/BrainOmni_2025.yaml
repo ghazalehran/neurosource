@@ -7,4 +7,10 @@ paper_doi: 10.48550/arXiv.2505.18185
 paper_url: https://doi.org/10.48550/arXiv.2505.18185
 code_url: https://github.com/OpenTSLab/BrainOmni
 open_weights: true
+dataset_tags: 
+  - MEG-MASC_2023
+  - MEG-Narratives_2022
+  - OMEGA_2016
+  - Cam-CAN_2017
+  - Go-Nogo_2020
 notes: "First joint EEG–MEG foundation model."

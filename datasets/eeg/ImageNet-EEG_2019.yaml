@@ -1,0 +1,13 @@
+dataset_name: ImageNet-EEG
+dataset_id: ImageNet-EEG_2019
+modalities: [EEG]
+species: human
+recording_task: [resting_state]
+access_type: controlled
+url: https://doi.org/10.48550/arXiv.1609.00344
+paper_url: https://arxiv.org/pdf/1609.00344
+num_subjects: 6
+num_sessions: 4
+year: 2019
+tags: [ImageNet, classification]
+

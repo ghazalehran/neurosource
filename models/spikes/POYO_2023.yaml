@@ -6,4 +6,13 @@ year: 2023
 paper_url: https://poyo-brain.github.io/
 code_url: https://github.com/neuro-galaxy/poyo
 open_weights: true
-notes: "Unified large-scale neural population decoding framework with spike tokenization and pretrained population models across many sessions."
+dataset_tags: 
+  - Perich_2018
+  - Churchland_2012
+  - Odoherty_2017
+  - Flint_2012
+  - NBL_MC_Maze_2021
+  - NBL_MC_RTT_2021
+notes: ->
+  Unified large-scale neural population decoding framework with spike
+  tokenization and pretrained population models across many sessions.

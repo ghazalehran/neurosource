@@ -1,0 +1,15 @@
+- dataset_name: HTNet Arm Movement ECoG Dataset
+  dataset_id: HTNet_arm_movement_ECoG_2020
+  modalities: [ECoG]
+  species: human
+  recording_task: [resting_state, motor_execution, other]
+  access_type: open
+  url: https://figshare.com/projects/Generalized_neural_decoders_for_transfer_learning_across_participants_and_recording_modalities/90287
+  num_subjects: 12
+  year: 2020
+  repository: Figshare
+  license: CC-BY-4.0
+  tags: [motor-execution, arm movement]
+  notes: >-
+    Long-term concurrent ECoG and video recordings during continuous
+    clinical epilepsy monitoring, labeled with arm movement.
