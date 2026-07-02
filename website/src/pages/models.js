@@ -6,6 +6,7 @@ import CatalogTable from '@site/src/components/CatalogTable';
 import models from '@site/src/data/models.json';
 import datasets from '@site/src/data/datasets.json';
 import taxonomies from '@site/src/data/taxonomies.json';
+import styles from './models.module.css';
 
 const datasetIds = new Set(datasets.map((d) => d.dataset_id));
 
@@ -20,16 +21,21 @@ function LinkCell(url) {
 
 function DatasetTagsCell(tags) {
   if (!tags?.length) return '—';
-  return tags.map((tag, i) => (
-    <React.Fragment key={tag}>
-      {i > 0 && ', '}
-      {datasetIds.has(tag) ? (
-        <Link to={`/datasets#${tag}`}>{tag}</Link>
-      ) : (
-        tag
+  return (
+    <span className={styles.datasetTags}>
+      {tags.map((tag) =>
+        datasetIds.has(tag) ? (
+          <Link key={tag} to={`/datasets#${tag}`} className={styles.datasetTag}>
+            {tag}
+          </Link>
+        ) : (
+          <span key={tag} className={`${styles.datasetTag} ${styles.datasetTagMissing}`}>
+            {tag}
+          </span>
+        )
       )}
-    </React.Fragment>
-  ));
+    </span>
+  );
 }
 
 const columns = [

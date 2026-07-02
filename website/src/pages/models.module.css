@@ -1,0 +1,30 @@
+.datasetTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.datasetTag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.datasetTag:hover {
+  background: var(--ifm-color-emphasis-200);
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary-light);
+}
+
+.datasetTagMissing {
+  opacity: 0.75;
+  border-style: dashed;
+}
