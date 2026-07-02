@@ -21,7 +21,7 @@ function FilterDropdown({label, value, options, onChange}) {
   );
 }
 
-export default function CatalogTable({data, columns, filters}) {
+export default function CatalogTable({data, columns, filters, rowIdField}) {
   const [activeFilters, setActiveFilters] = useState(
     Object.fromEntries(filters.map((f) => [f.field, '']))
   );
@@ -94,7 +94,7 @@ export default function CatalogTable({data, columns, filters}) {
           </thead>
           <tbody>
             {filteredData.map((entry, idx) => (
-              <tr key={idx}>
+              <tr key={idx} id={rowIdField ? entry[rowIdField] : undefined}>
                 {columns.map((col) => (
                   <td key={col.field}>
                     {col.render
