@@ -4,7 +4,10 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import CatalogTable from '@site/src/components/CatalogTable';
 import models from '@site/src/data/models.json';
+import datasets from '@site/src/data/datasets.json';
 import taxonomies from '@site/src/data/taxonomies.json';
+
+const datasetIds = new Set(datasets.map((d) => d.dataset_id));
 
 function LinkCell(url) {
   if (!url) return '—';
@@ -20,7 +23,11 @@ function DatasetTagsCell(tags) {
   return tags.map((tag, i) => (
     <React.Fragment key={tag}>
       {i > 0 && ', '}
-      <Link to={`/datasets#${tag}`}>{tag}</Link>
+      {datasetIds.has(tag) ? (
+        <Link to={`/datasets#${tag}`}>{tag}</Link>
+      ) : (
+        tag
+      )}
     </React.Fragment>
   ));
 }
