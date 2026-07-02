@@ -79,6 +79,14 @@
   background: var(--ifm-color-emphasis-100);
 }
 
+.table tbody tr[id] {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+.hashTarget {
+  background: var(--ifm-color-primary-lightest);
+}
+
 .emptyRow {
   text-align: center;
   color: var(--ifm-color-emphasis-500);
