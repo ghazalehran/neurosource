@@ -1,0 +1,15 @@
+- dataset_name: MR-RATE
+  dataset_id: MR-RATE_2026
+  modalities: [MRI_T1, MRI_T2, metadata]
+  species: human
+  recording_task: [resting_state]
+  access_type: registration_required
+  url: https://huggingface.co/datasets/Forithmus/MR-RATE
+  num_sessions: 4000
+  repository: Hugging Face
+  year: 2026
+  license: CC-BY-NC-SA-4.0
+  tags: [vision, language, image, text, radiology]
+  notes: >-
+    A 3D medical imaging dataset for Magnetic Resonance Imaging,
+    that pairs textual data with brain and spine MRI volumes.

@@ -1,0 +1,15 @@
+dataset_name: Go-Nogo
+dataset_id: Go-Nogo_2020
+modalities: [EEG, behavior]
+species: human
+recording_task: [visual, cognitive, active]
+access_type: open
+url: https://openneuro.org/datasets/ds002680/versions/1.2.0
+paper_url: https://doi.org/10.1016/j.cogbrainres.2003.11.010
+num_subjects: 14
+repository: OpenNeuro
+year: 2020
+license: CC0
+bids_compliant: true
+tags: [visual, cognitive, active]
+

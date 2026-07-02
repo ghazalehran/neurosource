@@ -1,0 +1,59 @@
+- dataset_name: NBL'21 MC Maze
+  dataset_id: NBL_MC_Maze_2021
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [other]
+  access_type: open
+  url: https://gui.dandiarchive.org/#/dandiset/000128
+  num_subjects: 1
+  num_sessions: 1
+  year: 2021
+  repository: DANDI
+  license: CC-BY-4.0
+  paper_url: https://neurallatents.github.io/datasets#mcmaze
+  tags: [Maze, reaching, center-out, M1]
+
+- dataset_name: NBL'21 MC RTT
+  dataset_id: NBL_MC_RTT_2021
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [other]
+  access_type: open
+  url: https://gui.dandiarchive.org/#/dandiset/000129
+  num_subjects: 1
+  num_sessions: 1
+  year: 2021
+  repository: DANDI
+  license: CC-BY-4.0
+  paper_url: https://neurallatents.github.io/datasets#mcrtt
+  tags: [Maze, reaching, random target, M1, S1]
+
+- dataset_name: NBL'21 Area 2 Bump
+  dataset_id: NBL_Area_2_Bump_2021
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [other]
+  access_type: open
+  url: https://gui.dandiarchive.org/#/dandiset/000127
+  num_subjects: 1
+  num_sessions: 1
+  year: 2021
+  repository: DANDI
+  license: CC-BY-4.0
+  paper_url: https://neurallatents.github.io/datasets#area2bump
+  tags: [Brodmann’s area 2, reaching, center-out, bump arm S1]
+
+- dataset_name: NBL'21 DMFC ready-set-go
+  dataset_id: NBL_DMFC_RSG_2021
+  modalities: [spikes, behavior]
+  species: macaque
+  recording_task: [cognitive, motor_execution, other]
+  access_type: open
+  url: https://gui.dandiarchive.org/#/dandiset/000130
+  num_subjects: 1
+  num_sessions: 1
+  year: 2021
+  repository: DANDI
+  license: CC-BY-4.0
+  paper_url: https://neurallatents.github.io/datasets#dmfcrsg
+  tags: [dorsomedial frontal cortex, center-out, ready-set-go S1]

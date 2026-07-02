@@ -1,0 +1,41 @@
+- dataset_name: Cogitate Conscious visual perception dataset - iEEG
+  dataset_id: Cogitate_2024_ieeg
+  modalities: [iEEG, fMRI]
+  species: human
+  recording_task: [visual, cognitive]
+  access_type: open
+  url: https://www.arc-cogitate.com/data-release
+  num_subjects: 38
+  year: 2024
+  repository: Cogitate Project Registry
+  license: CC-BY-4.0
+  paper_url: https://doi.org/10.1038/s41597-025-04833-z
+  tags: [cognitive, visual, perception]
+
+- dataset_name: Cogitate Conscious visual perception dataset - M/EEG
+  dataset_id: Cogitate_2024_meeg
+  modalities: [EEG, MEG, fMRI]
+  species: human
+  recording_task: [visual, cognitive]
+  access_type: open
+  url: https://www.arc-cogitate.com/data-release
+  num_subjects: 102
+  year: 2024
+  repository: Cogitate Project Registry
+  license: CC-BY-4.0
+  paper_url: https://doi.org/10.1038/s41597-025-04833-z
+  tags: [cognitive, visual, perception]
+
+- dataset_name: Cogitate Conscious visual perception dataset - fMRI
+  dataset_id: Cogitate_2024_fmri
+  modalities: [fMRI, EEG, MEG]
+  species: human
+  recording_task: [visual, cognitive]
+  access_type: open
+  url: https://www.arc-cogitate.com/data-release
+  num_subjects: 122
+  year: 2024
+  repository: Cogitate Project Registry
+  license: CC-BY-4.0
+  paper_url: https://doi.org/10.1038/s41597-025-04833-z
+  tags: [cognitive, visual, perception]

@@ -1,0 +1,13 @@
+- dataset_name: DeepCAD Data
+  dataset_id: DeepCAD_data_2021
+  modalities: [calcium]
+  species: mouse
+  access_type: open
+  url: https://github.com/cabooster/DeepCAD/tree/master/dataset
+  year: 2021
+  repository: GitHub
+  license: MIT
+  tags: [calcium, imaging]
+  notes: ->
+    Two-photon calcium imaging of neurite activities data used to 
+    train the DeepCAD model.

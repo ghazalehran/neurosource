@@ -9,6 +9,7 @@ modalities:
   - fmap
   - iEEG
   - ECoG
+  - sEEG
   - MEG
   - microscopy
   - motion
@@ -18,6 +19,7 @@ modalities:
   - calcium
   - genomics
   - fMRI
+  - dMRI
   - MRI_T1
   - MRI_T2
   - EOG
@@ -75,7 +77,10 @@ recording_tasks:
   - mental_imagery
   - mental_arithmetic
   - naturalistic_viewing
+  - emotion
   - cognitive
+  - language
+  - memory
   - imagery
   - visual
   - auditory
@@ -99,6 +104,8 @@ licenses:
   - CC-BY-NC-4.0
   - CC-BY-NC-ND-4.0
   - CC-BY-ND-4.0
+  - CC-BY-NC-SA-4.0
+  - ODC-BY
   - MIT
   - BSD-3-Clause
   - Apache-2.0

@@ -1,5 +1,5 @@
 - dataset_name: MEG-MASC (Manually Annotated Sub-Corpus)
-  dataset_id: MEG_MASC_2023
+  dataset_id: MEG-MASC_2023
   modalities: [MEG]
   species: human
   recording_task: [resting_state, cognitive, auditory, active]
