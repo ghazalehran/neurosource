@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import CatalogTable from '@site/src/components/CatalogTable';
@@ -14,13 +15,23 @@ function LinkCell(url) {
   );
 }
 
+function DatasetTagsCell(tags) {
+  if (!tags?.length) return '—';
+  return tags.map((tag, i) => (
+    <React.Fragment key={tag}>
+      {i > 0 && ', '}
+      <Link to={`/datasets#${tag}`}>{tag}</Link>
+    </React.Fragment>
+  ));
+}
+
 const columns = [
   {field: 'model_name', label: 'Model'},
   {field: 'modality', label: 'Modality'},
   {field: 'architecture', label: 'Architecture'},
   {field: 'task', label: 'Task'},
   {field: 'year', label: 'Year'},
-  {field: 'dataset_tags', label: 'Datasets'},
+  {field: 'dataset_tags', label: 'Datasets', render: DatasetTagsCell},
   {field: 'open_weights', label: 'Open Weights'},
   {field: 'paper_url', label: 'Paper', render: LinkCell},
   {field: 'code_url', label: 'Code', render: LinkCell},
