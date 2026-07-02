@@ -54,7 +54,12 @@ export default function DatasetsPage() {
       <div className="container margin-vert--lg">
         <Heading as="h1">Datasets</Heading>
         <p>Curated neural datasets with metadata on modality, species, and access.</p>
-        <CatalogTable data={sortedDatasets} columns={columns} filters={filters} />
+        <CatalogTable
+          data={sortedDatasets}
+          columns={columns}
+          filters={filters}
+          rowIdField="dataset_id"
+        />
       </div>
     </Layout>
   );
