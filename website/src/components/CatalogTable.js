@@ -1,4 +1,5 @@
-import React, {useState, useMemo} from 'react';
+import React, {useState, useMemo, useEffect} from 'react';
+import {useLocation} from '@docusaurus/router';
 import styles from './CatalogTable.module.css';
 
 function FilterDropdown({label, value, options, onChange}) {
@@ -21,7 +22,8 @@ function FilterDropdown({label, value, options, onChange}) {
   );
 }
 
-export default function CatalogTable({data, columns, filters}) {
+export default function CatalogTable({data, columns, filters, rowIdField}) {
+  const location = useLocation();
   const [activeFilters, setActiveFilters] = useState(
     Object.fromEntries(filters.map((f) => [f.field, '']))
   );
@@ -53,6 +55,32 @@ export default function CatalogTable({data, columns, filters}) {
       return true;
     });
   }, [data, activeFilters, searchQuery, columns, filters]);
+
+  useEffect(() => {
+    if (!rowIdField || !location.hash) return;
+
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+
+    let highlightTimeout;
+
+    const scrollToRow = () => {
+      const row = document.getElementById(id);
+      if (!row) return;
+
+      row.scrollIntoView({behavior: 'smooth', block: 'center'});
+      row.classList.add(styles.hashTarget);
+      highlightTimeout = setTimeout(() => row.classList.remove(styles.hashTarget), 2500);
+    };
+
+    const frame = requestAnimationFrame(scrollToRow);
+
+    return () => {
+      cancelAnimationFrame(frame);
+      clearTimeout(highlightTimeout);
+      document.getElementById(id)?.classList.remove(styles.hashTarget);
+    };
+  }, [rowIdField, location.hash, filteredData]);
 
   const updateFilter = (field, value) => {
     setActiveFilters((prev) => ({...prev, [field]: value}));
@@ -94,7 +122,7 @@ export default function CatalogTable({data, columns, filters}) {
           </thead>
           <tbody>
             {filteredData.map((entry, idx) => (
-              <tr key={idx}>
+              <tr key={idx} id={rowIdField ? entry[rowIdField] : undefined}>
                 {columns.map((col) => (
                   <td key={col.field}>
                     {col.render
